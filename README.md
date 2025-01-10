@@ -2,7 +2,7 @@
 
 This repository contains a shell script (`deploy_app.sh`) designed to streamline application deployment and monitoring for DevOps and SRE workflows. It automates tasks like building Docker images, deploying applications to Kubernetes, and performing health checks.
 
-## Features
+## ✨ Features
 - **Prerequisites Check**: Ensures all required tools (Docker, Kubernetes, and Curl) are installed.
 - **Docker Build and Push**: Automates building and pushing Docker images to a container registry.
 - **Kubernetes Deployment**: Deploys the application using a Kubernetes manifest file.
@@ -11,7 +11,7 @@ This repository contains a shell script (`deploy_app.sh`) designed to streamline
 
 ---
 
-## Prerequisites
+## 🛠 Prerequisites
 Before using this script, ensure the following tools are installed on your system:
 - [Docker](https://docs.docker.com/get-docker/)
 - [Kubernetes (kubectl)](https://kubernetes.io/docs/tasks/tools/)
@@ -20,23 +20,23 @@ Before using this script, ensure the following tools are installed on your syste
 
 ---
 
-## How to Use
+## 🚀 How to Use
 
 ### 1. Clone the Repository
 ```
 git clone https://github.com/rushi2828/k8s-deploy-shell-script
-cd devops-sre-deployment
+cd k8s-deploy-shell-script
 ```
 ### 2. Configure the Script
 
 ##### Update the variables at the top of the script:**
 
-- **APP_NAME:** Name of your application.
-- **DOCKER_IMAGE:** Docker image name (e.g., myrepo/my-app:latest).
-- **NAMESPACE:** Kubernetes namespace for deployment.
-- **K8S_DEPLOYMENT_FILE:** Path to your Kubernetes deployment manifest file.
-- **HEALTH_CHECK_URL:** URL of your application’s health check endpoint.
-- **ALERT_EMAIL:** Email address to send health check alerts.
+- **APP_NAME:** Name of your application. (```pet-clinic-demo```)
+- **DOCKER_IMAGE:** Docker image name (```rushi2323/pet-clinic-demo:latest```).
+- **NAMESPACE:** Kubernetes namespace for deployment.(```test```)
+- **K8S_DEPLOYMENT_FILE:** Path to your Kubernetes deployment manifest file.(```./k8s-deployment.yaml```)
+- **HEALTH_CHECK_URL:** URL of your application’s health check endpoint.(```http://localhost:8085/health```)
+- **ALERT_EMAIL:** Email address to send health check alerts.(```rushimane2606@gmail.com```)
 
 ## 3. Make the Script Executable
 ```
