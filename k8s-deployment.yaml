@@ -23,7 +23,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: pet-clinic-demo-service
-  namespace: prod
+  namespace: test
 spec:
   selector:
     app: pet-clinic-demo
